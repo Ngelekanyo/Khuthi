@@ -1,4 +1,3 @@
-```javascript
 const yesButton = document.getElementById("yes-btn");
 const noButton = document.getElementById("no-btn");
 
@@ -59,4 +58,3 @@ noButton.addEventListener("click", () => {
     alert("Nice try 😂");
 
 });
-```
