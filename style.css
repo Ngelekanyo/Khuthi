@@ -13,7 +13,7 @@ body {
 
     font-family: Arial, sans-serif;
 
-    overflow: hidden;
+    overflow-y: auto;
 
     color: #4a3b40;
 }
@@ -65,7 +65,8 @@ body {
 
 .container {
     width: 90%;
-    max-width: 600px;
+    margin: 30px auto;
+    /*max-width: 600px;*/
 
     text-align: center;
 
