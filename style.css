@@ -335,43 +335,97 @@ button:active {
         explode 1.8s ease-out forwards;
 }
 
-
 /* ========================= */
-/* FINAL PHOTO - MOBILE */
+/* FINAL PHOTO */
 /* ========================= */
 
 #photo-screen {
+    position: fixed;
+
+    inset: 0;
+
     width: 100vw;
     height: 100vh;
     height: 100dvh;
 
+    z-index: 50;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    /* PHOTO */
+    background-image: url("images/us.jpg");
+
     background-size: cover;
 
-    /* Adjust this later if needed */
     background-position: center center;
+
+    background-repeat: no-repeat;
+
+    /* ROUNDED CORNERS */
+    border-radius: 25px;
+
+    overflow: hidden;
+}
+
+.photo-container {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+}
+
+.couple-photo {
+    display: none;
 }
 
 .photo-overlay {
-    padding: 40px 20px;
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-end;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 60px 25px;
 
     background:
         linear-gradient(
-            transparent 30%,
-            rgba(0, 0, 0, 0.75)
+            transparent 35%,
+            rgba(0, 0, 0, 0.7)
         );
+
+    color: white;
+
+    opacity: 0;
+
+    animation:
+        overlayReveal 2s ease 1s forwards;
 }
 
 .photo-overlay h2 {
-    font-size: 1.7rem;
+    color: white;
 
-    margin-bottom: 12px;
+    margin-bottom: 15px;
 }
 
 .photo-overlay p {
-    font-size: 1rem;
+    font-size: 1.1rem;
 
-    line-height: 1.4;
+    margin-top: 8px;
 }
+
 /* ========================= */
 /* MOBILE OPTIMISATION */
 /* ========================= */
@@ -551,43 +605,49 @@ button:active {
 
     /* FINAL PHOTO */
 
-    #photo-screen {
-        width: 100vw;
+#photo-screen {
+    width: 100vw;
 
-        height: 100vh;
-        height: 100dvh;
-    }
+    height: 100vh;
+    height: 100dvh;
 
-    .photo-container {
-        width: 100%;
-        height: 100%;
-    }
+    border-radius: 20px;
 
-    .couple-photo {
-        width: 100%;
-        height: 100%;
+    background-size: cover;
 
-        object-fit: cover;
-        object-position: center center;
-    }
-
-    .photo-overlay {
-        padding: 40px 20px;
-    }
-
-    .photo-overlay h2 {
-        font-size: 1.7rem;
-
-        margin-bottom: 12px;
-    }
-
-    .photo-overlay p {
-        font-size: 1rem;
-
-        line-height: 1.4;
-    }
+    background-position: center center;
 }
 
+.photo-container {
+    width: 100%;
+    height: 100%;
+}
+
+.couple-photo {
+    display: none;
+}
+
+.photo-overlay {
+    padding: 40px 20px;
+
+    background:
+        linear-gradient(
+            transparent 30%,
+            rgba(0, 0, 0, 0.75)
+        );
+}
+
+.photo-overlay h2 {
+    font-size: 1.7rem;
+
+    margin-bottom: 12px;
+}
+
+.photo-overlay p {
+    font-size: 1rem;
+
+    line-height: 1.4;
+}
 
 /* ========================= */
 /* KEEP HIDDEN SCREENS HIDDEN */
