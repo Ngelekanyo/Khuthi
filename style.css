@@ -561,3 +561,172 @@ button:hover {
 #photo-screen.hidden {
     display: none;
 }
+
+/* ========================= */
+/* MOBILE OPTIMISATION */
+/* ========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        min-height: 100dvh;
+        align-items: flex-start;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .container {
+        width: calc(100% - 30px);
+        margin: 15px auto;
+        min-height: calc(100dvh - 30px);
+        padding: 35px 20px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .screen {
+        width: 100%;
+    }
+
+
+    /* TEXT */
+
+    .small-heading {
+        font-size: 0.75rem;
+        letter-spacing: 3px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+        line-height: 1.2;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+        line-height: 1.25;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
+
+    .intro {
+        font-size: 1.05rem;
+    }
+
+    .message {
+        font-size: 1rem;
+        line-height: 1.65;
+    }
+
+
+    /* ICONS */
+
+    .sun {
+        font-size: 55px;
+        margin-bottom: 10px;
+    }
+
+    .flower {
+        font-size: 55px;
+        margin-bottom: 10px;
+    }
+
+    .heart {
+        font-size: 60px;
+        margin-bottom: 15px;
+    }
+
+    .smile-icon {
+        font-size: 60px;
+        margin-bottom: 15px;
+    }
+
+
+    /* BUTTONS */
+
+    button {
+        width: 100%;
+        max-width: 320px;
+
+        min-height: 52px;
+
+        padding: 14px 20px;
+
+        font-size: 1rem;
+    }
+
+    button:hover {
+        transform: none;
+    }
+
+
+    /* MISSIONS */
+
+    .missions {
+        gap: 9px;
+        margin: 20px 0;
+    }
+
+    .missions p {
+        padding: 11px 12px;
+        font-size: 0.95rem;
+        line-height: 1.4;
+    }
+
+    .final-message {
+        margin-top: 25px;
+    }
+
+    .ps {
+        margin-top: 20px;
+        font-size: 0.82rem;
+        line-height: 1.5;
+    }
+
+    .signature {
+        margin-top: 25px;
+    }
+
+
+    /* HEART EXPLOSION */
+
+    #big-heart {
+        font-size: 90px;
+    }
+
+
+    /* FINAL PHOTO */
+
+    #photo-screen {
+        width: 100vw;
+        height: 100dvh;
+    }
+
+    .photo-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .couple-photo {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+
+    .photo-overlay {
+        padding: 40px 20px;
+    }
+
+    .photo-overlay h2 {
+        font-size: 1.7rem;
+    }
+
+    .photo-overlay p {
+        font-size: 1rem;
+    }
+}
