@@ -3,46 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Will You Be My Valentine?</title>
+
+    <title>Good Morning ❤️</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <div class="background"></div>
+
     <main class="container">
 
-        <div id="question-screen">
+        <!-- Opening screen -->
+        <section id="welcome-screen" class="screen">
+
+            <div class="sun">☀️</div>
+
+            <p class="small-heading">GOOD MORNING</p>
+
+            <h1>
+                Hey, beautiful.
+            </h1>
+
+            <p class="intro">
+                I made something for you.
+            </p>
+
+            <button id="open-btn">
+                Open it ❤️
+            </button>
+
+        </section>
+
+
+        <!-- Main message -->
+        <section id="message-screen" class="screen hidden">
+
+            <div class="flower">🌷</div>
+
+            <h2>
+                A little reminder...
+            </h2>
+
+            <p class="message">
+                I hope you woke up feeling rested,
+                happy, and ready for a good day.
+            </p>
+
+            <p class="message">
+                And if today decides to be difficult,
+                just remember that someone is
+                always rooting for you. ❤️
+            </p>
+
+            <button id="continue-btn">
+                There's more...
+            </button>
+
+        </section>
+
+
+        <!-- Final message -->
+        <section id="final-screen" class="screen hidden">
+
             <div class="heart">❤️</div>
 
-            <h1>Will you be my Valentine?</h1>
+            <h2>
+                Your mission today
+            </h2>
 
-            <p class="subtitle">
-                I have a very important question for you...
-            </p>
+            <div class="missions">
 
-            <div class="buttons">
-                <button id="yes-btn">Yes ❤️</button>
-                <button id="no-btn">No 😐</button>
+                <p>💧 Drink some water.</p>
+
+                <p>🍳 Eat something.</p>
+
+                <p>😊 Smile at least once.</p>
+
+                <p>💪 Go make today yours.</p>
+
             </div>
-        </div>
 
-
-        <div id="success-screen" class="hidden">
-            <div class="heart celebration">💖</div>
-
-            <h1>YAY!!! 🥰</h1>
-
-            <p>
-                I knew you'd say yes!
+            <p class="final-message">
+                And just so you don't forget...
             </p>
 
-            <p class="small-text">
-                You just made me very happy ❤️
+            <h3>
+                You are very, very loved. ❤️
+            </h3>
+
+            <p class="signature">
+                — Me
             </p>
-        </div>
+
+        </section>
 
     </main>
+
 
     <script src="script.js"></script>
 
