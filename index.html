@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,15 +16,18 @@
 
     <main class="container">
 
-        <!-- Opening screen -->
+        <!-- ========================= -->
+        <!-- OPENING SCREEN -->
+        <!-- ========================= -->
+
         <section id="welcome-screen" class="screen">
 
             <div class="sun">☀️</div>
 
-            <p class="small-heading">GOOD MORNING Dinga, Baby Muthu wanga❤️💕 </p>
+            <p class="small-heading">GOOD MORNING</p>
 
             <h1>
-                To the first lady of my heart :)).
+                Dinga, Baby Muthu wanga💕.
             </h1>
 
             <p class="intro">
@@ -37,7 +41,10 @@
         </section>
 
 
-        <!-- Main message -->
+        <!-- ========================= -->
+        <!-- MESSAGE SCREEN -->
+        <!-- ========================= -->
+
         <section id="message-screen" class="screen hidden">
 
             <div class="flower">🌷</div>
@@ -52,8 +59,8 @@
             </p>
 
             <p class="message">
-                And if today decides to be difficult,
-                just remember your smile is all it takes 
+                If today decides to be difficult,
+                just remember your smile is all it takes
                 to flip it around. ❤️
             </p>
 
@@ -64,7 +71,10 @@
         </section>
 
 
-        <!-- Final message -->
+        <!-- ========================= -->
+        <!-- FINAL MESSAGE / MISSIONS -->
+        <!-- ========================= -->
+
         <section id="final-screen" class="screen hidden">
 
             <div class="heart">❤️</div>
@@ -75,15 +85,15 @@
 
             <div class="missions">
 
-                <p>❤️ Pray </p>
-                
+                <p>❤️ Pray</p>
+
                 <p>🌞 Smile and brighten my day.</p>
 
-                <p>💧 Drink some water! </p>
-                
+                <p>💧 Drink some water!</p>
+
                 <p>🍳 Eat something.</p>
 
-                <p>😊 Smile some more, .</p>
+                <p>😊 Smile some more. ❤️</p>
 
                 <p>💪 Go crush that test and make today yours!</p>
 
@@ -96,15 +106,99 @@
             <h3>
                 You are very, very loved.😘❤️
             </h3>
-            < p> P.s I'm probably still sleeping when you read this, so please don't call at 5am 😂 </p>
+
+            <p class="ps">
+                P.s I'm probably still sleeping when you read this,
+                so please don't call at 5am 😂
+            </p>
 
             <p class="signature">
                 — Ngelekanyo
             </p>
 
+            <button id="smile-btn">
+                Okay, one more thing...
+            </button>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- SILLY INTERACTION -->
+        <!-- ========================= -->
+
+        <section id="smile-screen" class="screen hidden">
+
+            <div class="smile-icon">😊</div>
+
+            <h2>
+                Before you go...
+            </h2>
+
+            <p id="smile-message" class="message">
+                I need you to give me your biggest smile.
+            </p>
+
+            <button id="smile-confirm-btn">
+                I smiled 😊
+            </button>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- HEART EXPLOSION -->
+        <!-- ========================= -->
+
+        <section id="explosion-screen" class="screen hidden">
+
+            <div id="big-heart">
+                ❤️
+            </div>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- PHOTO REVEAL -->
+        <!-- ========================= -->
+
+        <section id="photo-screen" class="screen hidden">
+
+            <div class="photo-container">
+
+                <!-- Replace images/us.jpg with your photo -->
+                <img
+                    src="images/us.jpg"
+                    alt="Us ❤️"
+                    class="couple-photo"
+                >
+
+                <div class="photo-overlay">
+
+                    <h2>
+                        Good morning, my love. ❤️
+                    </h2>
+
+                    <p>
+                        I hope you have the most amazing day.
+                    </p>
+
+                    <p>
+                        Now go make me proud. 🥰
+                    </p>
+
+                </div>
+
+            </div>
+
         </section>
 
     </main>
+
+
+    <!-- Hearts created by JavaScript will appear here -->
+    <div id="heart-container"></div>
 
 
     <script src="script.js"></script>
