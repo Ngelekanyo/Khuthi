@@ -308,6 +308,9 @@ button:active {
     pointer-events: none;
 }
 
+
+/* BIG HEART */
+
 #big-heart {
     font-size: 120px;
 
@@ -335,6 +338,7 @@ button:active {
         explode 1.8s ease-out forwards;
 }
 
+
 /* ========================= */
 /* FINAL PHOTO */
 /* ========================= */
@@ -355,7 +359,6 @@ button:active {
     justify-content: center;
     align-items: center;
 
-    /* PHOTO */
     background-image: url("images/us.jpg");
 
     background-size: cover;
@@ -364,7 +367,6 @@ button:active {
 
     background-repeat: no-repeat;
 
-    /* ROUNDED CORNERS */
     border-radius: 25px;
 
     overflow: hidden;
@@ -425,6 +427,7 @@ button:active {
 
     margin-top: 8px;
 }
+
 
 /* ========================= */
 /* MOBILE OPTIMISATION */
@@ -605,49 +608,52 @@ button:active {
 
     /* FINAL PHOTO */
 
-#photo-screen {
-    width: 100vw;
+    #photo-screen {
+        width: 100vw;
 
-    height: 100vh;
-    height: 100dvh;
+        height: 100vh;
+        height: 100dvh;
 
-    border-radius: 20px;
+        border-radius: 20px;
 
-    background-size: cover;
+        background-size: cover;
 
-    background-position: center center;
-}
+        background-position: center center;
+    }
 
-.photo-container {
-    width: 100%;
-    height: 100%;
-}
+    .photo-container {
+        width: 100%;
+        height: 100%;
+    }
 
-.couple-photo {
-    display: none;
-}
+    .couple-photo {
+        display: none;
+    }
 
-.photo-overlay {
-    padding: 40px 20px;
+    .photo-overlay {
+        padding: 40px 20px;
 
-    background:
-        linear-gradient(
-            transparent 30%,
-            rgba(0, 0, 0, 0.75)
-        );
-}
+        background:
+            linear-gradient(
+                transparent 30%,
+                rgba(0, 0, 0, 0.75)
+            );
+    }
 
-.photo-overlay h2 {
-    font-size: 1.7rem;
+    .photo-overlay h2 {
+        font-size: 1.7rem;
 
-    margin-bottom: 12px;
-}
+        margin-bottom: 12px;
+    }
 
-.photo-overlay p {
-    font-size: 1rem;
+    .photo-overlay p {
+        font-size: 1rem;
 
-    line-height: 1.4;
-}
+        line-height: 1.4;
+    }
+
+} /* <-- THIS WAS MISSING */
+
 
 /* ========================= */
 /* KEEP HIDDEN SCREENS HIDDEN */
