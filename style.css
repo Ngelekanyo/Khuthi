@@ -314,7 +314,7 @@ button:active {
 #big-heart {
     font-size: 120px;
 
-    animation: heartPulse 1.5s ease forwards;
+    animation: heartPulse 2.0s ease forwards;
 }
 
 
@@ -335,7 +335,7 @@ button:active {
     z-index: 200;
 
     animation:
-        explode 1.8s ease-out forwards;
+        explode 2.5s ease-out forwards;
 }
 
 
@@ -440,7 +440,7 @@ button:active {
 
         align-items: flex-start;
 
-        overflow-x: hidden;
+        overflow-x: auto;
         overflow-y: auto;
     }
 
