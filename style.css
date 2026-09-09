@@ -549,3 +549,9 @@ button:hover {
     }
 
 }
+
+/* Keep hidden screens actually hidden */
+#explosion-screen.hidden,
+#photo-screen.hidden {
+    display: none;
+}
